@@ -1,0 +1,146 @@
+.root{
+
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    align-items: center;
+  
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    min-height: 100px;
+    width: 100%;
+    
+    background-color: rgb(41, 41, 41);
+}
+
+
+.navbar > ul{
+    width: 100%;
+    display: flex;
+    list-style-type: none;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-inline-start: 0;
+
+}
+
+
+
+footer {
+    clear: both;
+
+    position: relative;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    min-height: 100px;
+    background-color: rgb(41, 41, 41);
+    text-align: center;
+}
+
+.container{
+    background-color: black;
+    flex: 1;
+
+    width: 80%;
+    
+}
+
+#catalog{
+    margin: 40px 0 40px 0;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-auto-rows: 30vh;
+    
+    width: 100%;
+    justify-items: center;
+    align-items: center;
+
+}
+
+.catalog-item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.catalog-item > img{
+    max-width: 100px;
+    height: auto;
+}
+
+.catalog-item > .description{
+    overflow: hidden;
+    height: 100px;
+}
+
+.about{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-self: stretch;
+
+}
+
+.about-section1{
+    margin: 0 20px 0 20px;
+}
+
+.about-section1 > h1{
+    width: 75%;
+}
+
+.about-contacts{
+    margin: 50px 0;
+}
+
+.contacts-list{
+    box-sizing: border-box;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    
+}
+
+.contacts-list > a{
+    width: 5%;
+}
+
+.contacts-list > a > object{
+    width: 100%;
+    pointer-events: none;
+}
+
+.item-page{
+    margin-top: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.name-image-block{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.name-image-block > .image-container{
+    width: 300px;
+    height: auto;
+}
+
+.name-image-block > .image-container > img{
+    width: 100%;
+}
+
+.item-page > .description{
+    width: 50%;
+    font-size: 22px;
+   
+}
